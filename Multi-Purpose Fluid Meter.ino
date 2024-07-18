@@ -18,7 +18,7 @@ unsigned long oldTime = 0;
 
 File dataFile;
 
-const unsigned long maxMilliLitres = 5000; // Set your desired maximum amount of water in milliliters
+const unsigned long maxMilliLitres = 5000; 
 
 void setup() {
   lcd.begin(16, 2);
@@ -44,7 +44,7 @@ void setup() {
   }
 
   oldTime = millis();
-  myservo.write(0); // Initialize servo to open position
+  myservo.write(0); 
 }
 
 void loop() {
@@ -77,11 +77,10 @@ void loop() {
       dataFile.close();
     }
 
-    // Control Servo Motor based on total amount of water passed
     if (totalMilliLitres >= maxMilliLitres) {
-      myservo.write(90); // Turn servo to close position
+      myservo.write(90); 
     } else {
-      myservo.write(0); // Keep servo in open position
+      myservo.write(0); 
     }
 
     pulseCount = 0;
