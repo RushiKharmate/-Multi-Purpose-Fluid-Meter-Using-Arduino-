@@ -26,3 +26,8 @@ The system operates by counting pulses from the YF-S201 flow sensor to calculate
 - Thanks to the Arduino community for resources and inspiration.
 - Acknowledge any contributors or resources used in developing the project.
 
+## Contact
+
+   - Author: [Rushi Kharmate]
+   - Email: [rushirajekharmate@gmail.com]
+
